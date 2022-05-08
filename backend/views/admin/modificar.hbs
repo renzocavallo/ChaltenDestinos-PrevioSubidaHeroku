@@ -1,0 +1,22 @@
+<main class="modificar">
+<div>
+<h4>Editar Novedad</h4>
+<button class="volver"><a href="/admin/novedades/volver">Volver</a></button><p>Al listado de novedades</p>
+<form action="/admin/novedades/modificar/" method="post" enctype="multipart/form-data">
+<input type="hidden" value="{{novedad.id}}" name="id">
+<div class="form-group">
+<input type="text" class="form-control" value="{{novedad.titulo}}" name="titulo">
+<textarea type="text" class="form-control" name="subtitulo">{{novedad.subtitulo}}</textarea>
+<textarea  class="form-control" name="cuerpo">{{novedad.cuerpo}}</textarea>
+<label>Imagen: <input type="file" name="imagen" id="imagen" /></label>
+<input type="hidden" name="img_original" value="{{novedad.img_id}}">
+<label>Borrar imagen actual</label>
+<input type="checkbox" name="img_delete" id="img_delete" value="1">
+<button type="submit" class="btn btn-primary">Modificar</button>
+</div>
+</form>
+{{#if error}}
+<h5>{{message}}</h5>
+{{/if}}
+</div>
+</main>

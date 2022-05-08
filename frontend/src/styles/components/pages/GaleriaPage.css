@@ -1,0 +1,67 @@
+.contenedor{
+    transition: all 3s ease;
+}
+
+.galeria ul .foto{
+    list-style-type: none;
+    float: left;
+    width: 18%;
+    margin: 1em -1.5em 1em 4%;
+    padding: 0.3em;
+      
+}
+
+.galeria ul .foto img{
+    width: 100%;
+    display: block;
+    transition: all 3s ease;
+}
+
+.galeria ul .foto:nth-child(5n+1){
+    margin-left: 0;
+}
+
+h2{
+    color: #253439;
+    font-weight: 500;
+    margin: 0 0 1em;
+}
+
+.galeria ul .foto img:hover{
+    cursor: default;
+    border-radius: 10px;  
+    transform: scale(1.2);   
+}
+
+@media screen and (max-width: 1080px){
+
+    .contenedor h2{
+    margin-left: 5px;
+    font-size: medium;
+   }
+
+   .galeria{
+       position: relative;
+       left:30px;
+   }
+    .galeria .foto{
+        width: 40%;
+    }
+    
+    .galeria .foto img{
+        width: 100%;
+        display: block;
+    }
+
+    .galeria ul .foto{
+        list-style-type: none;
+        float: left;
+        width: 30%;
+        padding: 0.7em;
+        margin: auto;
+          
+    }
+    
+ 
+
+}

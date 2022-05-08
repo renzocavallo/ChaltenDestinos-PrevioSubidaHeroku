@@ -1,0 +1,103 @@
+.left{
+    float: left;
+    color: #7c898b;
+}
+
+.right{
+    float: right;
+}
+
+
+.homeimg{
+    margin-bottom: 1.5em;
+}
+
+.columnas{
+    overflow: hidden;
+}
+
+.bienvenidos, .testimonios{
+    box-sizing: border-box;
+}
+
+.bienvenidos{
+    width: 75%;
+    padding-right: 2em;
+}
+
+.testimonios{
+    width: 25%;
+}
+
+.testimonio{
+    margin-left: 5px;
+    background-color: #7c898b;
+    padding: 1em;
+}
+
+.testimonios .testimonio .cita{
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    font-style: italic;
+    color:black;
+    display: block;
+}
+
+.testimonios .testimonio .autor{
+    font-size: 0.5em;
+    text-align: center;
+    margin: 1em 0;
+    display: block;
+}
+
+@media screen and (max-width: 1080px){
+    .left{
+        float: left;
+        color: #7c898b;
+    }
+    
+    .right{
+        float: right;
+    }
+    
+    .homeimg img{
+        width: 100%;
+        margin: 0;
+    }
+    
+    .columnas{
+        overflow: hidden;
+    }
+    
+    .bienvenidos, .testimonios{
+        box-sizing: border-box;
+    }
+    
+    .bienvenidos{
+        width: 60%;
+        font-size: xx-small;
+        margin-left: 15px;
+    }
+    
+    .testimonios{
+        width: 35%;
+    }
+    
+    .testimonio{
+        background-color: #7c898b;
+        padding: 1em;
+    }
+
+    .testimonios h2{
+        font-size: medium;
+    }
+    
+    .testimonio .cita{
+       font-size: xx-small;
+    }
+    
+    .testimonio .autor{
+        font-size: xx-small;
+    }
+}

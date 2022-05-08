@@ -1,0 +1,32 @@
+<main class="novedades">
+<div>
+<p>Hola {{usuario}}!<button><a href="/admin/login/logout">Cerrar Sesión</a></button></p>
+</div>
+<h3>Listado de Novedades</h3>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Título</th>
+      <th scope="col">Imagen</th>
+      <th scope="col" class="text-center">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+      {{#each novedades}}
+    <tr>
+      <th scope="row">{{id}}</th>
+      <td>{{titulo}}</td>
+      <td>{{{imagen}}}</td>
+      <td class="text-center">
+      <a href="/admin/novedades/modificar/{{id}}" class="btn btn-sm btn-secondary">
+      <i class="fa fa-pencil"></i></a>
+      <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-sm btn-secondary">
+      <i class="fa fa-trash"></i></a>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+<a id="nuevo" href="/admin/novedades/agregar"><i class="fa fa-plus"></i>Nuevo</a>
+</main>

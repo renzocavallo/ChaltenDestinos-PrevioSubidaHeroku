@@ -1,0 +1,50 @@
+.holder{
+    font-family: 'Lora', serif;
+    max-width: 960px;
+    margin: 0 auto;
+}
+nav{
+    background-color: #7c898b;
+    margin-bottom: 2em;
+  }
+  
+  nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li{
+    margin: 0;
+    display:inline-block;
+    width: 16.3%;
+  }
+  
+  nav ul li:hover{
+    background-color: rgba(0,0,0,0.3);
+  }
+  
+  nav ul li a{
+    margin: 0;
+    color: white;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .activo{
+    background-color: #253439;
+  }
+
+  @media screen and (max-width: 1080px){
+    .holder{
+      width: 100%;
+    }
+
+    nav ul li{
+      font-size: x-small;
+      width: 20%;
+    }
+
+  }

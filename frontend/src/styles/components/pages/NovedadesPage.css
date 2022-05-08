@@ -1,0 +1,18 @@
+.novedades h3,h4{
+    font-size:small;
+}
+
+.novedades p{
+    font-size: small;
+}
+
+@media screen and (max-width: 1080px){
+    .novedades h2{
+        margin-left: 5px;
+        font-size: medium;
+    }
+
+    .novedades p{
+        margin-left: 10px;
+    }
+}

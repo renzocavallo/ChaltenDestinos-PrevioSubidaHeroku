@@ -1,0 +1,19 @@
+body{
+  margin: 0;
+  width: 100%;
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+.holder{
+  max-width: 960px;
+  margin: 0 auto;
+}
+h2{
+  color: #253439;
+  font-weight: 500;
+  margin: 0 0 1em;
+}
+h3{
+  font-size: large;
+}
